@@ -1,0 +1,42 @@
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #b07b00;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Button arrow effect */
+.arrow-button::after {
+  content: '►';
+  display: inline-block;
+  margin-left: 8px;
+  transition: margin-left 0.3s ease;
+}
+.arrow-button:hover::after {
+  margin-left: 12px;
+}
+
+/* Background for about/team sections */
+.about-bg {
+  background-color: #ffedbd;
+}
+
+/* Active nav link style */
+.navigation-link.active {
+  background-color: #b07b00;
+  color: white;
+}
+.space-y-4{
+  padding: 20px;
+  background-color: #fef9c3;
+  border: 1px solid #ccc;
+  border-radius: 12px; /* 👈 This adds rounded corners */
+  max-width: 400px;
+}
